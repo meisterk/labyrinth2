@@ -9,10 +9,10 @@ const App = {
     },
     methods: {
         fillBoard() {
-            for (let zeile = 0; zeile < HEIGHT; zeile++) {
+            for (let row = 0; row < HEIGHT; row++) {
                 this.board.push([]);
-                for (let spalte = 0; spalte < WIDTH; spalte++) {
-                    this.board[zeile].push('X');
+                for (let column = 0; column < WIDTH; column++) {
+                    this.board[row].push('X');
                 }
             }
         }
