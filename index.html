@@ -11,7 +11,13 @@
 
 <body>
     <h1>Labyrinth</h1>
-    <div id="app"> {{ text}} </div>
+    <div id="app">
+        <table>
+            <tr v-for="zeile in board">
+                <td v-for="zelle in zeile">{{ zelle }}</td>
+            </tr>
+        </table>
+    </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
 </body>
