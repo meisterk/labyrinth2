@@ -14,7 +14,12 @@
     <div id="app">
         <table>
             <tr v-for="row in board">
-                <td v-for="cell in row">{{ cell }}</td>
+                <td v-for="cell in row" :class="{
+                    'border-top': cell.borderTop,
+                    'border-right': cell.borderRight,
+                    'border-bottom': cell.borderBottom,
+                    'border-left': cell.borderLeft
+                }">{{ cell.text }}</td>
             </tr>
         </table>
     </div>

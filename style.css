@@ -3,7 +3,23 @@ table {
 }
 
 td {
-    border: 1px black solid;
+    
     padding: 0.5em;
     
+}
+
+.border-top {
+    border-top: 1px black solid;
+}
+
+.border-right {
+    border-right: 1px black solid;
+}
+
+.border-bottom {
+    border-bottom: 1px black solid;
+}
+
+.border-left {
+    border-left: 1px black solid;
 }
