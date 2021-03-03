@@ -13,8 +13,8 @@
     <h1>Labyrinth</h1>
     <div id="app">
         <table>
-            <tr v-for="zeile in board">
-                <td v-for="cell in zeile">{{ cell }}</td>
+            <tr v-for="row in board">
+                <td v-for="cell in row">{{ cell }}</td>
             </tr>
         </table>
     </div>
